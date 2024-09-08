@@ -2,3 +2,64 @@
 Arquivo: CSS Meiose - Atividade Avaliativa de Biologia e do Senai 
 Autores: Laura Betti (N°14) - Lucas Casagrande (N°17) - Milena Souza () - Pietro Melle () - Pyetro Joaquim () - Vitor Cecato (N°29)
 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fontes */
+h1 {}
+h2 {}
+h3 {}
+p {}
+a {}
+li {}
+
+.paralax {}
+
+/* Flexbox - Site Todo */
+.site {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {}
+
+/* Nav */
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #8FD14F;
+}
+
+/* Principal */
+.principal {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+/* Introdução */
+.introducao {}
+
+/* Meiose 1 */
+.meiose1 {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Meiose 2 */
+.meiose2 {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Footer */
+.footer {}
+
+
+/* Medias Screen */
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 480px) {}
