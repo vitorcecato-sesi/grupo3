@@ -2,6 +2,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    font-family: 'Lucida Sans';
 }
 
 /* Definir o H1 e H2 para todo o Site */
@@ -51,7 +52,7 @@ p {
     text-decoration: none;
     color: black;
     height: 2vh;
-    width: 6vw;
+    width: 14vw;
     text-align: center;
     padding: 5px;
     background-color: #8FD14F;
@@ -96,6 +97,7 @@ p {
     padding: 3%;
     border: 2px solid #CEE741;
     border-radius: 10px;
+    filter: drop-shadow(0px 0px 12px gray);
 }
 
 /* FlexBox do Texto 2 */
@@ -105,6 +107,7 @@ p {
     padding: 3%;
     border: 2px solid #8FD14F;
     border-radius: 10px;
+    filter: drop-shadow(0px 0px 12px gray);
 }
 
 /* FlexBox / Definição da Imagem */
@@ -112,6 +115,7 @@ p {
     display: flex;
     width: 50vw;
     padding: 3%;
+    filter: drop-shadow(0px 0px 12px gray);
 }
 
 /* --------------------------------------------------------------------------- */
@@ -119,8 +123,67 @@ p {
 /* FlexBox do Footer */
 .footer {
     display: flex;
-    background-color: #8FD14F;
-    height: 4vh;
-    justify-content: space-evenly;
+    flex-direction: row;
     align-items: center;
+    background-color: #8FD14F;
+    padding: 2em;
+    justify-content: space-around;
+}
+
+/* Definição da Imagem */
+.footer img {
+    width: 12vw;
+    height: 25vh;
+}
+
+.footer li {
+    font-size: 1.2em;
+}
+
+/* --------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+    .nav a {
+        width: 22vw;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-texto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer img {
+        width: 25vw;
+        height: 29vh;
+    }
+
+    .article img {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .nav {
+        height: 10vh;
+    }
+    .nav a {
+        width: 40vw;
+    }
+
+    .footer img {
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .article img {
+        width: 80vw;
+    }
+
 }
