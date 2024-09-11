@@ -121,3 +121,20 @@ li {
 .footer p {
     font-size: 1em;
 }
+
+@media screen and (max-width: 768px) {
+    .fotos {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .footer img {
+        width: 25vw;
+        height: 25vh;
+    }
+}
