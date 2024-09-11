@@ -30,7 +30,16 @@ li {
     font-size: 1em;
 }
 
-.paralax {}
+/* Parallax */
+.parallax {
+    /* The image used */
+  background-image: url();
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Flexbox - Site Todo */
 .site {
@@ -138,6 +147,20 @@ li {
     justify-content: space-between;
     width: 70vw;
     padding-top: 8vh;
+}
+
+/* Explicação Etapas */
+.article-meiose {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+    text-align: justify;
+    background-color: #54DA75;
+    padding: 2em;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 /* Meiose 1 e 2 */
