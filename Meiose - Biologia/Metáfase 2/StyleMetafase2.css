@@ -170,6 +170,9 @@ p {
 
 @media screen and (max-width: 480px) {
 
+    .nav {
+        height: 10vh;
+    }
     .nav a {
         width: 40vw;
     }
