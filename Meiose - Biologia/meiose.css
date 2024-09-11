@@ -9,12 +9,24 @@ Autores: Laura Betti (N°14) - Lucas Casagrande (N°17) - Milena Souza () - Piet
 }
 
 /* Fontes */
-h1 {}
-h2 {}
-h3 {}
-p {}
-a {}
-li {}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.5em;
+}
+p {
+    font-size: 1.2em;
+}
+a {
+    font-size: 1em;
+}
+li {
+    font-size: 1em;
+}
 
 .paralax {}
 
@@ -49,7 +61,6 @@ li {}
     text-decoration: none;
     color: black;
     height: 2vh;
-    width: 6vw;
     text-align: center;
     padding: 5px;
     background-color: #8FD14F;
@@ -80,7 +91,21 @@ li {}
     align-items: center;
     justify-content: center;
     background-color: #0CA75E;
-    width: 70vw;
+    border-radius: 10px;
+    width: 65vw;
+    text-align: justify;
+    padding: 2em;
+}
+
+/* Blocos de Texto - Introdução */
+.introducao p {
+    width: 60vw;
+    padding-top: 1em;
+}
+
+.picture-intro {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Meiose 1 */
