@@ -22,7 +22,9 @@ p {
     font-size: 1.2em;
 }
 a {
-    font-size: 1em;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
 }
 li {
     font-size: 1em;
@@ -82,6 +84,7 @@ li {
     align-items: center;
     background-color: white;
     padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 /* Introdução */
@@ -100,28 +103,94 @@ li {
 /* Blocos de Texto - Introdução */
 .introducao p {
     width: 60vw;
-    padding-top: 1em;
+    padding-top: 4vh;
+}
+
+.haploide_e_diploide {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+.haploide_e_diploide h2 {
+    text-align: center;
 }
 
 .picture-intro {
     display: flex;
     flex-direction: row;
+    width: 80vw;
+    justify-content: space-evenly;
+}
+
+.meiose-etapas-titulo {
+    background-color: #0CA75E;
+    border: 2px solid black;
+    width: 95%;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Meiose - Etapas */
+.meiose-etapas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+    padding-top: 8vh;
 }
 
 /* Meiose 1 */
-.meiose1 {
+.aside-meiose1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: #8FD14F;
+    width: 30vw;
+    height: 30vh;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Meiose 2 */
-.meiose2 {
+.aside-meiose2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: #8FD14F;
+    width: 30vw;
+    height: 30vh;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Footer */
-.footer {}
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #8FD14F;
+    padding: 2em;
+    justify-content: space-around;
+}
+
+.footer img {
+    width: 12vw;
+    height: 25vh;
+}
+
+.footer h3 {
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1em;
+}
 
 
 /* Medias Screen */
