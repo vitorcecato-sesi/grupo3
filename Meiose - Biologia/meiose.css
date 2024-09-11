@@ -30,7 +30,16 @@ li {
     font-size: 1em;
 }
 
-.paralax {}
+/* Parallax */
+.parallax {
+    /* The image used */
+  background-image: url();
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Flexbox - Site Todo */
 .site {
@@ -140,13 +149,27 @@ li {
     padding-top: 8vh;
 }
 
-/* Meiose 1 */
-.aside-meiose1 {
+/* Explicação Etapas */
+.article-meiose {
     display: flex;
     flex-direction: column;
-    background-color: #8FD14F;
+    justify-content: space-around;
+    align-items: center;
     width: 30vw;
-    height: 30vh;
+    text-align: justify;
+    background-color: #54DA75;
+    padding: 2em;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Meiose 1 e 2 */
+.aside-meiose {
+    display: flex;
+    flex-direction: column;
+    background-color: #71E68E;
+    width: 25vw;
+    height: 35vh;
     padding: 1em;
     border: 2px solid black;
     border-radius: 5px;
@@ -154,18 +177,17 @@ li {
     justify-content: space-between;
 }
 
-/* Meiose 2 */
-.aside-meiose2 {
-    display: flex;
-    flex-direction: column;
-    background-color: #8FD14F;
-    width: 30vw;
-    height: 30vh;
-    padding: 1em;
-    border: 2px solid black;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: space-between;
+.aside-meiose a {
+    padding: 5px;
+    background-color: #ABFFBE;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.aside-meiose a:hover {
+    opacity: 1;
+    width: 15vw;
+    text-align: center;
 }
 
 /* Footer */
