@@ -52,7 +52,7 @@ p {
     text-decoration: none;
     color: black;
     height: 2vh;
-    width: 14vw;
+    width: 25vw;
     text-align: center;
     padding: 5px;
     background-color: #8FD14F;
@@ -146,8 +146,12 @@ p {
 /* Resolução até 768px */
 @media screen and (max-width: 768px) {
 
+    .nav {
+        height: 10vh;
+    }
+
     .nav a {
-        width: 22vw;
+        width: 40vw;
     }
 
     .footer {
