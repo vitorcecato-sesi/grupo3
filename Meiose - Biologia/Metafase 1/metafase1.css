@@ -15,15 +15,16 @@ h2{
 }
 
 p{
-    font-size: 1.1em;
-   
+    font-size: 1.1em; 
 }
 
+/*Estilizar o bloco titulo  (header) */ 
 .tihe{
     background-color:#CEE741 ;
     padding: 4vh;
-  
 }
+/* Fim estilizar o bloco titulo  (header) */ 
+
 
 .nav{
 display: flex;
@@ -68,18 +69,13 @@ padding-bottom: 5vh;
    
 }
 
-.texto1{
+.texto{
     width: 38vw;
     font-size: 1.2em;
     padding: 2em;
 }
 
-.texto2{
-    width: 38vw;
-    font-size: 1.2em;
-    padding: 2em;
-    
-}
+
 
 .titulotex2{
     padding-bottom: 1em;
@@ -133,28 +129,40 @@ padding-bottom: 5vh;
 }
 
 .footer p {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .footer img {
-    width: 17vw;
-    height: 24vh;
+    width: 19vw;
+    height: 26vh;
 }
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 634px) {
 
+    .texto {
+        padding: 5vh;
+
+    }
+
+ .titulotex{
+    padding-bottom: 1.4vh;
+    
+ }
+
+ .footer h3{
+    padding-top: 1.5vh;
+
+ }
     .footer img {
         width: 31vw;
-        height: 18vh;
+        height: 22vh;
     }
     
-
     .footer {
         display: flex;
         flex-direction: column;
-    
         background-color: #8FD14F;
         padding: 2em;
        
