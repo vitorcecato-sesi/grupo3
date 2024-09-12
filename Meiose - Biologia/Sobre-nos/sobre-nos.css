@@ -90,12 +90,19 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100vw;
  }
 
 /* Foto + Nome */
 .integrantes {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.integrantes img {
+    width: 9.5vw;
+    height: 25vh;
 }
 
 /* Footer */
