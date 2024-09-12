@@ -83,24 +83,21 @@ li {
     height: 70vh;
 }
 
-/* Fotos */
-.fotos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100vw;
- }
 
-/* Foto + Nome */
-.integrantes {
+/* Foto do grupo */
+.imagemgrupo {
+
+width: 40vw;
+height: 22vw;
+
+}
+
+.boximg {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+padding: 3.3vw;
 
-.integrantes img {
-    width: 9.5vw;
-    height: auto;
 }
 
 /* Footer */
@@ -130,15 +127,6 @@ li {
 @media screen and (max-width: 768px) {
 
     .principal {
-        height: auto;
-    }
-
-    .fotos {
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: auto;
-    }
-    .integrantes {
         height: auto;
     }
 
