@@ -1,24 +1,28 @@
+/* Resetando a página */
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
- font-family: 'Lucida Sans';
-font-size: 2em;
+/* Decidindo as fontes e tamanhos das letras */
+
+h1 {
+    font-family: 'Lucida Sans';
+    font-size: 2em;
 }
 
-h2{
+h2 {
     font-size: 1.8em;
     font-family: 'Lucida Sans';
 }
 
-h3{
+h3 {
 
     font-size: 1.6em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans';
 }
-p{
+
+p {
     font-size: 1.2em;
     font-family: 'Lucida Sans';
 }
@@ -30,12 +34,6 @@ li {
 
 a {
     font-family: 'Lucida Sans';
-}
-
-
-.site {
-    display: flex;
-    flex-direction: column;
 }
 
 /* Header */
@@ -63,18 +61,23 @@ a {
     text-decoration: none;
     color: black;
     text-align: center;
-    padding: 5px;
+    padding: 0.2vw;
     background-color: #8FD14F;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 1vw;
+    width: 10vw;
     opacity: 0.8;
 }
 
+/* Animando os botões (quando passar o mouse sobre) */
 .nav a:hover {
-    opacity: 1;
-    transition: 5ms;
-    box-shadow: 0px 0px 15px white; /* Alterar a cor*/
+    background-color: #c2f78d;
+    transition: 400ms;
+    box-shadow: 0px 0px 15px rgb(109, 136, 91);
+    /* Alterar a cor*/
 }
+
+/* Article */
 
 .article {
     display: flex;
@@ -85,88 +88,139 @@ a {
 
 }
 
-.article2 {
-    display: flex;
-    flex-direction: column;
-    padding-top: 2vw;
-    padding-left: 2vw;
-    padding-bottom: 2vw;
-    align-items: center;
+/* Caixa responsável pelo primeiro tópico e sua imagem */
 
-}
-
-
-.boxrow {
+.boxrow1 {
     display: flex;
     flex-direction: row;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    padding-right: 3.5vw;
+    padding-left: 1vw;
+    width: 90vw;
+
+
 }
 
-.boxcolumn {
+/* Caixa responsável pelo texto do primeiro tópico */
+
+.boxcolumn1 {
     display: flex;
     flex-direction: column;
+    width: 55vw;
+    padding-right: 4vw;
+    padding-left: 2vw;
+    filter: drop-shadow(0px 0px 12px grey);
+
 }
 
-.text1 {
-    padding:2vw;
-    padding-right: 14vw;
-    padding-bottom: 10vw;
-    height: 40vh;
-    width: 49.5vw;
+/* Permite a animação do bloco (quando o mouse passa sobre) */
+
+.boxrow1:hover {
+
+    transition: 1s; /* Tempo para a animação acontecer */
+    background-color: #7bae48;
+    color: white;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 12px grey); 
+    border-radius: 0.5vw;
+
 }
 
-.text1 h2 {
-
-  text-align: center;
-    
-}
+/* Imagem */
 
 .img1 {
 
-width: 30vw;
-height: 50vh;
-box-shadow: 0.1vw 0.1vw 1vw 0.1vw black;
+    width: 30vw;
+    height: 50vh;
+    box-shadow: 0.1vw 0.1vw 1vw 0.1vw black;
 
 }
 
-.text2 {
-
-    height: 45vh;
-    padding: 2vw;
-    padding-left: 10vw;
-
-}
-.text2 h2 {
-
-    text-align: center;
-
-}
+/* Imagem */
 
 .img2 {
 
     width: 30vw;
     height: 60vh;
     box-shadow: 0.1vw 0.1vw 1vw 0.1vw black;
-    
-    }
 
-    .conceitos {
- 
-        background-color: #7bae48;
-        height: 30vh;
-        width: 80vw;
-        padding-top: 2vw;
-        padding-bottom: 6vw;
-        padding-left: 4vw;
-        padding-right: 1vw;
-        border-radius: 0.5vw;
-    }
+}
 
-    .conceitos h2 {
+/* Caixa responsável pelo segundo tópico e sua imagem */
 
-        text-align: center;
-    }
+.boxrow2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    padding-right: 0.8vw;
+    padding-left: 3.5vw;
+    width: 90vw;
+}
+
+/* Caixa responsável pelo texto do segundo tópico */
+
+.boxcolumn2 {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    padding-left: 8vw;
+    padding-right: 2vw;
+    filter: drop-shadow(0px 0px 12px grey);
+}
+
+/* Permite a animação da caixa (quando o mouse passa sobre ela) */
+
+.boxrow2:hover {
+
+    transition: 1s; /*Determina o tempo da animação*/ 
+    background-color: #7bae48;
+    color: white;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 12px grey);
+    border-radius: 0.5vw;
+
+}
+
+/* Caixa responsável pelo posicionamento do bloco "curiosidades" */
+
+.extrabox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vw;
+
+}
+
+/* Caixa responsável pelo bloco "curiosidades" */
+
+.conceitos {
+    display: flex;
+    flex-direction: column;
+    background-color: #7bae48;
+    border-radius: 0.5vw;
+    width: 70vw;
+    padding: 4vw;
+    filter: drop-shadow(0px 0px 12px grey);
 
 
+}
+
+/* Animação do curiosidades */
+
+.conceitos:hover {
+
+    transition: 2s;
+    background-color: #ffffff;
+    color: #7bae48;
+    cursor: pointer;
+
+
+}
+
+
+/* Footer */
 
 .footer {
     display: flex;
@@ -176,6 +230,8 @@ box-shadow: 0.1vw 0.1vw 1vw 0.1vw black;
     padding: 2em;
     justify-content: space-around;
 }
+
+/* Imagem do footer */
 
 .footer img {
     width: 12vw;
@@ -191,10 +247,124 @@ box-shadow: 0.1vw 0.1vw 1vw 0.1vw black;
     font-size: 1em;
 }
 
+/* Media para 768px */
+
 @media screen and (max-width: 768px) {
 
+    .nav a {
+
+        width: 20vw;
+    }
 
 
-    
+
+    .boxrow1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vw;
+
+
+    }
+
+    .boxcolumn1 {
+        display: flex;
+        flex-direction: column;
+        padding-right: 10vw;
+        padding-bottom: 10vw;
+
+
+    }
+
+    .img1 {
+
+        width: 40vw;
+        height: 50vh;
+
+    }
+
+    .boxrow2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 5vw;
+        padding-bottom: 10vw;
+        padding-right: 5vw;
+
+
+    }
+
+    .boxcolumn2 {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10vw;
+        padding-right: 15vw;
+
+
+    }
+
+    .img2 {
+
+        width: 40vw;
+        height: 55vh;
+
+
+    }
+
+    .conceitos {
+        padding: 6vw;
+    }
+
+    .extrabox {
+
+        padding-bottom: 5vw;
+    }
+
+    .footer {
+
+        flex-direction: column;
+        gap: 5vw;
+
+    }
+
+    .footer img {
+        width: 16vw;
+        height: 18vh;
+    }
 }
 
+/* Media para 480px*/
+
+@media screen and (max-width: 480px) {
+
+    .header {
+
+        height: 50vw;
+        text-align: center;
+    }
+
+    .nav {
+
+        height: 20vw;
+    }
+
+    .nav a {
+        width: 20vw;
+
+    }
+
+    .img1 {
+        width: 40vw;
+        height: 50vw;
+    }
+
+    .img2 {
+        width: 40vw;
+        height: 50vw;
+    }
+
+    .footer img {
+        width: 35vw;
+    }
+
+}
