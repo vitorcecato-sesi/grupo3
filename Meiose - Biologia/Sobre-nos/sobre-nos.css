@@ -128,20 +128,18 @@ li {
 }
 
 @media screen and (max-width: 768px) {
-    
-    img {
-        width: 40vw;
-        height: 50vh;
-    }
 
     .principal {
-        height: 140vh;
+        height: auto;
     }
 
     .fotos {
         flex-direction: column;
         justify-content: space-evenly;
-        height: 140vh;
+        height: auto;
+    }
+    .integrantes {
+        height: auto;
     }
 
     .footer {
@@ -150,7 +148,7 @@ li {
     }
 
     .footer img {
-        width: 25vw;
-        height: 25vh;
+        width: 80vw;
+        height: 90vh;
     }
 }
