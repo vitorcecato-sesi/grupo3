@@ -32,7 +32,7 @@ background: #0CA75E;
 .nav a {
     text-decoration: none;
     color: black;
-    text-align: center;
+  text-align: center;
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
@@ -54,6 +54,12 @@ padding-bottom: 6vh;
 padding-top: 6vh;
 }
 
+.texto{
+    width: 35vw;
+    font-size: 1.2em;
+    padding: 2em;   
+}
+
 .textos{
     border-radius: 6em;
     border: solid 0.1em;   
@@ -67,15 +73,8 @@ padding-top: 6vh;
 }
 
 .titulotex{
-    padding-top: 4vh;
+    padding-top: 1vh;
 
-}
-
-
-.texto{
-     width: 38vw;
-     font-size: 1.2em;
-     padding: 2em;   
 }
 
 .footer {
@@ -135,24 +134,25 @@ padding-top: 6vh;
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 634px) {
 
-    .img{
-        width: 55%;
-        height: 55%; 
+    .texto {
+        padding: 5vh;
+
     }
+ .titulotex{
+    padding-bottom: 1.4vh;
+    
+ }
 
     .footer img {
         width: 31vw;
         height: 18vh;
     }
     
-   
-
     .footer {
         display: flex;
         flex-direction: column;
-    
         background-color: #8FD14F;
         padding: 2em;
        
