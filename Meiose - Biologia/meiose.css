@@ -75,6 +75,7 @@ li {
     opacity: 0.8;
 }
 
+/* Mouse em cima do "botão" do nav */
 .nav a:hover {
     opacity: 1;
     transition: 5ms;
@@ -116,6 +117,7 @@ li {
     padding-top: 4vh;
 }
 
+/* Imagens das células */
 .haploide_e_diploide {
     display: flex;
     flex-direction: column;
@@ -129,13 +131,15 @@ li {
     text-align: center;
 }
 
-.picture-intro {
+/* Caixa para ajustar as imagens da célula */
+.box-celulas {
     display: flex;
     flex-direction: row;
     width: 80vw;
     justify-content: space-evenly;
 }
 
+/* Titulo ETAPAS */
 .meiose-etapas-titulo {
     background-color: #0CA75E;
     border: 2px solid black;
@@ -144,7 +148,7 @@ li {
     padding: 1em;
 }
 
-/* Meiose - Etapas */
+/* Caixa Meiose - Etapas */
 .meiose-etapas {
     display: flex;
     flex-direction: row;
@@ -167,7 +171,7 @@ li {
     border-radius: 5px;
 }
 
-/* Meiose 1 e 2 */
+/* Meiose 1 e 2 (Navegação) */
 .aside-meiose {
     display: flex;
     flex-direction: column;
@@ -210,6 +214,7 @@ li {
     padding-bottom: 1em;
 }
 
+/* Bloco de Video e Audio */
 .midias {
     display: flex;
     flex-direction: row;
@@ -223,6 +228,7 @@ li {
     width: 25vw;
 }
 
+/* Video/Audio + Texto */
 .formatacao-vid_aud {
     display: flex;
     flex-direction: column;

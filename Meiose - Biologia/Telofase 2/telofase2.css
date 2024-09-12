@@ -323,7 +323,7 @@ a {
     .footer {
 
         flex-direction: column;
-        gap: 5vw;
+        gap: 5vw; /* Espaçamento entre os itens */
 
     }
 
