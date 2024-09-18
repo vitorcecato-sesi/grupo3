@@ -1,0 +1,1 @@
+update livros set preco = (preco * 0.10) + preco where titulo= 'O Pequeno Príncipe'
